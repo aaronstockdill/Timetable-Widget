@@ -1,0 +1,50 @@
+var timetable = {
+    "title": "UC Semester 1",
+    "data": {
+        "monday": {
+            "9am": "",
+            "10am": "",
+            "11am": "",
+            "12pm": "MATH102 LecB",
+            "1pm": "COSC121 LecC",
+            "2pm": "",
+            "3pm": "STAT101 LecA",
+        },
+        "tuesday": {
+            "9am": "",
+            "10am": "PHYS101 LecA",
+            "11am": "MATH102 LecC",
+            "12pm": "",
+            "1pm": "COSC121 Com",
+            "2pm": "COSC121 Com",
+            "3pm": "STAT101 LecB",
+        },
+        "wednesday": {
+            "9am": "",
+            "10am": "",
+            "11am": "PHYS101 LecB",
+            "12pm": "COSC121 LecB",
+            "1pm": "STAT101 LecC",
+            "2pm": "MATH102 Tut",
+            "3pm": "",
+        },
+        "thursday": {
+            "9am": "PHYS101 Lab",
+            "10am": "PHYS101 Lab",
+            "11am": "PHYS101 Lab",
+            "12pm": "",
+            "1pm": "PHYS101 LecC",
+            "2pm": "MATH102 LecD",
+            "3pm": "",
+        },
+        "friday": {
+            "9am": "MATH102 LecA",
+            "10am": "PHYS101 Tut",
+            "11am": "",
+            "12pm": "",
+            "1pm": "",
+            "2pm": "STAT101 Tut",
+            "3pm": "COSC121 LecA",
+        }
+    }
+}
