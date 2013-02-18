@@ -24,7 +24,7 @@ function createTimetable(data){
         newRow = "";
         newRow += "<tr id='" + times[h] + "' class='timerow'><td class='time'>" + times[h] + "</td>";
         for(var i in data.data){
-            newRow += "<td>" + data.data[i][times[h]] + "</td>"
+            newRow += "<td onmouseover='showMore(\"" + times[h] + "\", \"" + i + "\", this)'>" + data.data[i][times[h]].title + "</td>"
         }
         newRow += "</tr>";
         table.innerHTML += newRow;
@@ -45,14 +45,25 @@ function recolour(){
     
     for(i=0;i < times.length;i++){
         times[i].childNodes[today].style.background = "#ecc";
-        console.log(times[i].id);
-        console.log(time);
         if(times[i].id == time){
             times[i].childNodes[today].style.background = "#c00";
             times[i].childNodes[today].style.color = "white";
         }
     }
     document.getElementById(time).style.background = "#ecc";
+}
+
+function showMore(time, day, cell){
+    oldBG = cell.style.background;
+    oldCol = cell.style.color;
+    cell.addEventListener("mouseout", function(){
+        cell.innerHTML = timetable.data[day][time].title;
+        cell.style.background = oldBG;
+        cell.style.color = oldCol;
+    }, false)
+    cell.innerHTML = timetable.data[day][time].more;
+    cell.style.background = "gold";
+    cell.style.color = "black";
 }
 
 createTimetable(timetable);

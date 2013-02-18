@@ -5,10 +5,12 @@ html, body{
 
 body{
     padding: 25px;
+    width: 470px;
 }
 
 #container{
-    box-shadow: 0px 5px 20px black;
+    box-shadow: 0px 5px 10px black;
+    width: 470px;
 }
 
 h1{
@@ -29,11 +31,18 @@ table, tr, td{
     border-collapse: collapse;
     text-align: center;
     vertical-align: middle;
+    font-size: 13px;
 }
 
 table{
     width: 100%;
     background: white;
+}
+
+tbody{
+    width: 468px;
+    display: block;
+    border: none;
 }
 
 td{
