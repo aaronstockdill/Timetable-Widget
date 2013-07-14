@@ -2,23 +2,23 @@ function createTable(title){
     document.getElementById("container").innerHTML = "<h1>" + title + "</h1><table id='timetable'><tbody id='tbody'></tbody></table>";
 }
 
-function createDays(){
-    document.getElementById("tbody").innerHTML = "<tr>\
-        <td class='time'>&nbsp;</td>\
-        <td class='day'>Monday</td>\
-        <td class='day'>Tuesday</td>\
-        <td class='day'>Wednesday</td>\
-        <td class='day'>Thursday</td>\
-        <td class='day'>Friday</td>\
-        </tr>";
+function createDays(data){
+    toadd = "<tr><td class='time'>&nbsp;</td>";
+    days = Object.keys(data.data);
+    for(var day in days){
+        this_day = days[day][0].toUpperCase() + days[day].substring(1);
+        toadd += "<td class='time'>" + this_day + "</td>";
+    }
+    toadd += "</tr>"
+    document.getElementById("tbody").innerHTML = toadd
 }
 
 function createTimetable(data){
     createTable(data.title)
-    createDays();
+    createDays(data);
     
     table = document.getElementById("tbody");
-    times = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm"];
+    times = Object.keys(data.data.monday);
     
     for(var h in times){
         newRow = "";
@@ -38,9 +38,9 @@ function recolour(){
     var time = (d.getHours() > 12)? d.getHours() - 12 + "pm": d.getHours() + "am";
     
     if(d.getHours() > 15){
-        time = "3pm";
+        time = "4pm";
     } else if(d.getHours() < 9){
-        time = "9am";
+        time = "8am";
     }
     
     for(i=0;i < times.length;i++){

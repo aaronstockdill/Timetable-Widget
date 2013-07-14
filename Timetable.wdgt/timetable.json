@@ -1,7 +1,125 @@
 var timetable = {
-    "title": "UC Semester 1",
+    "title": "UC Semester 2",
     "data": {
         "monday": {
+            "8am": {
+                "title": "MATH103 Lecture",
+                "more": "E6 Lecture Theatre"
+            },
+            "9am": {
+                "title": "",
+                "more": ""
+            },
+            "10am": {
+                "title": "",
+                "more": ""
+            },
+            "11am": {
+                "title": "COSC122 Lecture",
+                "more": "C2 Lecture Theatre"
+            },
+            "12pm": {
+                "title": "",
+                "more": ""
+            },
+            "1pm": {
+                "title": "PHYS102 Tut",
+                "more": "213B Rutherford"
+            },
+            "2pm": {
+                "title": "",
+                "more": ""
+            },
+            "3pm": {
+                "title": "COSC122 Lab",
+                "more": "133 Erskine"
+            },
+            "4pm": {
+                "title": "COSC122 Lab",
+                "more": "133 Erskine"
+            },
+        },
+        "tuesday": {
+            "8am": {
+                "title": "MATH103 Lecture",
+                "more": "E6 Lecture Theatre"
+            },
+            "9am": {
+                "title": "",
+                "more": ""
+            },
+            "10am": {
+                "title": "MATH120 Lecture",
+                "more": "C2 Lecture Theatre"
+            },
+            "11am": {
+                "title": "PHYS102 Lecture",
+                "more": "C2 Lecture Theatre"
+            },
+            "12pm": {
+                "title": "",
+                "more": ""
+            },
+            "1pm": {
+                "title": "",
+                "more": ""
+            },
+            "2pm": {
+                "title": "PHYS102 Lab",
+                "more": "301 Rutherford"
+            },
+            "3pm": {
+                "title": "PHYS102 Lab",
+                "more": "301 Rutherford"
+            },
+            "4pm": {
+                "title": "PHYS102 Lab",
+                "more": "301 Rutherford"
+            },
+        },
+        "wednesday": {
+            "8am": {
+                "title": "MATH103 Lecture",
+                "more": "E6 Lecture Theatre"
+            },
+            "9am": {
+                "title": "",
+                "more": ""
+            },
+            "10am": {
+                "title": "",
+                "more": ""
+            },
+            "11am": {
+                "title": "PHYS102 Lecture",
+                "more": "C1 Lecture Theatre"
+            },
+            "12pm": {
+                "title": "COSC122 Lecture",
+                "more": "C3 Lecture Theatre"
+            },
+            "1pm": {
+                "title": "MATH120 Tutorial",
+                "more": "533 Rutherford"
+            },
+            "2pm": {
+                "title": "",
+                "more": ""
+            },
+            "3pm": {
+                "title": "",
+                "more": ""
+            },
+            "4pm": {
+                "title": "MATH120 Lecture",
+                "more": "E8 Lecture Theatre"
+            },
+        },
+        "thursday": {
+            "8am": {
+                "title": "MATH103 Lecture",
+                "more": "E5 Lecture Theatre"
+            },
             "9am": {
                 "title": "",
                 "more": ""
@@ -15,120 +133,38 @@ var timetable = {
                 "more": ""
             },
             "12pm": {
-                "title": "MATH102 LecB",
+                "title": "MATH120 Lecture",
                 "more": "E8 Lecture Theatre"
             },
             "1pm": {
-                "title": "COSC121 LecC",
+                "title": "PHYS102 Lecture",
                 "more": "C1 Lecture Theatre"
             },
             "2pm": {
-                "title": "",
-                "more": ""
-            },
-            "3pm": {
-                "title": "STAT101 LecA",
-                "more": "C2 Lecture Theatre"
-            }
-        },
-        "tuesday": {
-            "9am": {
-                "title": "",
-                "more": ""
-            },
-            "10am": {
-                "title": "PHYS101 LecA",
-                "more": "C1 Lecture Theatre"
-            },
-            "11am": {
-                "title": "MATH102 LecC",
-                "more": "C2 Lecture Theatre"
-            },
-            "12pm": {
-                "title": "",
-                "more": ""
-            },
-            "1pm": {
-                "title": "COSC121 Com",
-                "more": "Erskine 133 Lab2"
-            },
-            "2pm": {
-                "title": "COSC121 Com",
-                "more": "Erskine 133 Lab2"
-            },
-            "3pm": {
-                "title": "STAT101 LecB",
+                "title": "COSC122 Lecture",
                 "more": "C3 Lecture Theatre"
-            }
-        },
-        "wednesday": {
-            "9am": {
-                "title": "",
-                "more": ""
-            },
-            "10am": {
-                "title": "",
-                "more": ""
-            },
-            "11am": {
-                "title": "PHYS101 LecB",
-                "more": "C1 Lecture Theatre"
-            },
-            "12pm": {
-                "title": "COSC121 LecB",
-                "more": "C1 Lecture Theatre"
-            },
-            "1pm": {
-                "title": "STAT101 LecC",
-                "more": "A3 Lecture Theatre"
-            },
-            "2pm": {
-                "title": "MATH102 Tut",
-                "more": "Erskine 244"
             },
             "3pm": {
                 "title": "",
                 "more": ""
-            }
-        },
-        "thursday": {
-            "9am": {
-                "title": "PHYS101 Lab",
-                "more": "Rutherford 305-8"
             },
-            "10am": {
-                "title": "PHYS101 Lab",
-                "more": "Rutherford 305-8"
+            "4pm": {
+                "title": "COSC122 Lab",
+                "more": "133 Erskine"
             },
-            "11am": {
-                "title": "PHYS101 Lab",
-                "more": "Rutherford 305-8"
-            },
-            "12pm": {
-                "title": "",
-                "more": ""
-            },
-            "1pm": {
-                "title": "PHYS101 LecC",
-                "more": "C1 Lecture Theatre"
-            },
-            "2pm": {
-                "title": "MATH102 LecD",
-                "more": "C2 Lecture Theatre"
-            },
-            "3pm": {
-                "title": "",
-                "more": ""
-            }
         },
         "friday": {
+            "8am": {
+                "title": "",
+                "more": ""
+            },
             "9am": {
-                "title": "MATH102 LecA",
-                "more": "A2 Lecture Theatre"
+                "title": "MATH120 Lecture",
+                "more": "C3 Lecture Theatre"
             },
             "10am": {
-                "title": "PHYS101 Tut",
-                "more": "Rutherford 214"
+                "title": "MATH103 Tut",
+                "more": "240 Erskine"
             },
             "11am": {
                 "title": "",
@@ -143,13 +179,17 @@ var timetable = {
                 "more": ""
             },
             "2pm": {
-                "title": "STAT101 Tut",
-                "more": "Erskine 035 Lab2"
+                "title": "",
+                "more": ""
             },
             "3pm": {
-                "title": "COSC121 LecA",
-                "more": "C1 Lecture Theatre"
-            }
+                "title": "",
+                "more": ""
+            },
+            "4pm": {
+                "title": "",
+                "more": ""
+            },
         }
     }
 }
